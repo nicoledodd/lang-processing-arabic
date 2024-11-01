@@ -10,3 +10,6 @@ Conducted an online self-paced reading experiment in which participants read sen
 
 #### ~/exp2-recall-task
 Conducted an online task using Qualtrics in which participants read a sentence on one page, then re-wrote that sentence from memory on the following page. Cleaned, preprocessed and hand coded recall accuracy. Analyzed accuracy rates to determine whether people were more likely to correctly sentences that are more common than sentences that are less common.
+
+#### ~/exp3-eye-tracking-UAE
+Conducted an in-person eye tracking experiment in which participants read full sentences on a screen while a camera tracked their eye movements. Cleaned, preprocessed and analyzed eye movement data to determine whether people were more likely to re-read or read sentences for longer periods of time when they are unexpected. 

@@ -7,3 +7,6 @@ Utilized the [Penn Arabic Treebank Part 3 v 3.2](https://catalog.ldc.upenn.edu/L
 
 #### ~/exp1-self-paced-reading
 Conducted an online self-paced reading experiment in which participants read sentences one word at a time at their own pace. Cleaned, preprocessed and analyzed reading time data to determine whether people read certain types of sentences faster than others. Demonstrated through statistical analyses and visuals that people read sentences faster when they are more expected versus when they are not.
+
+#### ~/exp2-recall-task
+Conducted an online task using Qualtrics in which participants read a sentence on one page, then re-wrote that sentence from memory on the following page. Cleaned, preprocessed and hand coded recall accuracy. Analyzed accuracy rates to determine whether people were more likely to correctly sentences that are more common than sentences that are less common.

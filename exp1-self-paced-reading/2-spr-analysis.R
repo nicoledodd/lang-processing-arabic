@@ -1,12 +1,12 @@
-## analyze self-paced reading data using cplDataAnalysis package (not publicly
-## available)
+## analyze self-paced reading data using cplDataAnalysis package 
+## (not publicly available)
 
 
 library(tidyverse)
 library(cplDataAnalysis)
 
 #### import data ---------------------------------------------------------------
-rt_data <- read.csv('data/clean/rts/all_data-NEW.csv', header = TRUE)
+rt_data <- read.csv('data/clean/rts/exp1-spr-rts-clean.csv', header = TRUE)
 
 # fill in 0s for items with excluded comp questions (group numbers 8 and 9)
 rt_data$correct[is.na(rt_data$correct)] <- 0
@@ -40,7 +40,7 @@ spr <- analyze.spr(rt_data,
 resids <- spr[[6]]
 
 # write w resids
-# write.csv(resids, 'data/clean/rts/all_data_wresids-NEW.csv', row.names = FALSE)
+# write.csv(resids, 'data/clean/rts/exp1-spr-rts-clean-resids.csv', row.names = FALSE)
 
 
 

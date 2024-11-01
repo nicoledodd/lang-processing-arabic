@@ -230,7 +230,7 @@ all_data <- all_data %>%
   filter((RT >= 100) & (RT <= 2000))
 
 # write for analysis
-# write.csv(all_data, 'data/clean/rts/all_data-NEW.csv', row.names = FALSE)
+# write.csv(all_data, 'data/clean/rts/exp1-spr-rts-clean.csv', row.names = FALSE)
 
 
 

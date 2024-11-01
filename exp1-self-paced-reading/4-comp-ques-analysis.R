@@ -6,7 +6,7 @@ library(openxlsx)
 library(brms)
 
 #### import data ---------------------------------------------------------------
-comp_questions <- read.xlsx('data/clean/comp questions/comp_data-NEW.xlsx')
+comp_questions <- read.xlsx('data/clean/comp questions/exp1-spr-comp-ques-clean.xlsx')
 
 ## filter out problem questions
 ## remove questions for group_numbers 8 and 9 due to coding errors
@@ -108,7 +108,7 @@ correctness = brm(correct ~ item_type * correct_ans +
 correctness
 # significance all around
 
-write_rds(correctness, 'models-new/modelComp-new.RDS')
+write_rds(correctness, 'models/modelComp.RDS')
 
 correctness_df <- as_tibble(fixef(correctness), rownames = "parameter")
 correctness_df <- correctness_df %>%
@@ -137,7 +137,7 @@ model_fixef
 
 # not significant
 
-write_rds(correctnessGen, 'models-new/modelComp-gen-new.RDS')
+write_rds(correctnessGen, 'models/modelComp-gen.RDS')
 
 correctnessGen_df <- as_tibble(fixef(correctnessGen), rownames = "parameter")
 correctnessGen_df <- correctnessGen_df %>%
@@ -147,4 +147,4 @@ correctnessGen_df <- correctnessGen_df %>%
 
 ## write estimates
 estimates <- bind_rows(correctness_df, correctnessGen_df)
-# write.csv(estimates, 'models-new/comp-ques-analysis-estimates-NEW.csv', row.names = FALSE)
+# write.csv(estimates, 'models/comp-ques-analysis-estimates.csv', row.names = FALSE)

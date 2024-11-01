@@ -7,7 +7,7 @@ library(cplDataAnalysis)
 
 
 #### read in data --------------------------------------------------------------
-rt_data <- read.csv('data/clean/rts/all_data_wresids-NEW.csv', header = TRUE)
+rt_data <- read.csv('data/clean/rts/exp1-spr-rts-clean-resids.csv', header = TRUE)
 
 
 #### prep data -----------------------------------------------------------------
@@ -476,11 +476,7 @@ estimates <- bind_rows(model234_df, model234_c_df, model1_df, model1_c_df,
                        model4_df, model4_c_df, model5_df, model5_c_df,
                        model6_df, model6_c_df, model7_df, model7_c_df)
 
-# write.csv(estimates, 'model-estimates-all-NEW.csv', row.names = FALSE)
-
-
-
-
+# write.csv(estimates, 'model-estimates-all.csv', row.names = FALSE)
 
 
 

@@ -1,11 +1,12 @@
 ## analyzing and modeling recall data
 
+
 library(tidyverse)
 library(openxlsx)
 library(brms)
 
-#### Load & clean data ---------------------------------------------------------
-data <- read.xlsx("data/clean/recall-data-10Nov2021.xlsx")
+#### Load coded data & clean round 2 -------------------------------------------
+data <- read.xlsx("data/clean/exp2-recall-clean-coded.xlsx")
 
 # clean data: filter out filler items, incomplete items, excluded stim
 data <- data %>% 

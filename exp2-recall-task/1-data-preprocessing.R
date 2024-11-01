@@ -179,6 +179,6 @@ recall_data <- recall_data %>%
 ## next step: code if participant got it correct or not/included resumptive 
 ## pronoun clitic or not
 
-# write.xlsx(recall_data, "data/clean/recall-data-10Nov2021.xlsx")
-# write.xlsx(participant_data, "data/clean/participant-data-10Nov2021.xlsx")
+# write.xlsx(recall_data, "data/clean/exp2-recall-clean.xlsx")
+# write.xlsx(participant_data, "data/clean/exp2-participant-data-clean.xlsx")
 
